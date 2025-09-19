@@ -1,8 +1,7 @@
 import enum
 from sqlalchemy import Column, Integer, String, Text, DateTime, Enum as SAEnum, func
-from sqlalchemy.orm import declarative_base
+from app import Base
 
-Base = declarative_base()
 
 class TaskStatus(enum.Enum):
     todo = "todo"
