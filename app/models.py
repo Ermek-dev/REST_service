@@ -1,6 +1,7 @@
 import enum
 from sqlalchemy import Column, Integer, String, Text, DateTime, Enum as SAEnum, func
-from app import Base
+
+from app.db import Base
 
 
 class TaskStatus(enum.Enum):
