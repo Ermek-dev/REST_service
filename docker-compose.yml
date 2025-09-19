@@ -7,10 +7,10 @@ services:
     restart: always
     environment:
       POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: Samsung2025**
+      POSTGRES_PASSWORD: 12345
       POSTGRES_DB: postgres
     ports:
-      - "5433:5432"
+      - "5432:5432"  # для локального доступа из хоста
     volumes:
       - postgres_data:/var/lib/postgresql/data
 
