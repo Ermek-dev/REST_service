@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from app.routes import tasks
-from app.database import engine
+from app.db import engine
 from app.models import Base
 
 
